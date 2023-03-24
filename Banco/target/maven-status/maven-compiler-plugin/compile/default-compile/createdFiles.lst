@@ -1,0 +1,5 @@
+br/unipar/banco/Main.class
+br/unipar/banco/model/Endereco.class
+br/unipar/banco/model/Banco.class
+br/unipar/banco/model/Agencia.class
+br/unipar/banco/model/Conta.class
