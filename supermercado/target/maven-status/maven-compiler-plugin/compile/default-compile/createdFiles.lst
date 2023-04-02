@@ -1,0 +1,8 @@
+br/unipar/supermercado/model/TipoProduto.class
+br/unipar/supermercado/model/Item.class
+br/unipar/supermercado/model/Pedido.class
+br/unipar/supermercado/Main.class
+br/unipar/supermercado/model/Cliente.class
+br/unipar/supermercado/model/FormaPagamento.class
+br/unipar/supermercado/model/ItemPedido.class
+br/unipar/supermercado/model/SuperMercado.class
