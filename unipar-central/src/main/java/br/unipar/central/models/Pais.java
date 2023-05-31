@@ -8,27 +8,12 @@ package br.unipar.central.models;
  *
  * @author andersonbosing
  */
-public class Pais {
+public class Pais extends AbstractBaseEntity {
     
-    private int id;
     private String nome;
     private String sigla;
 
     public Pais() {
-    }
-
-    public Pais(int id, String nome, String sigla) {
-        this.id = id;
-        this.nome = nome;
-        this.sigla = sigla;
-    }
-    
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -49,7 +34,11 @@ public class Pais {
 
     @Override
     public String toString() {
-        return "Pais{" + "id=" + id + ", nome=" + nome + ", sigla=" + sigla + '}';
+        return "Pais{" + "id=" + super.getId() + 
+                "ra=" + super.getRegistroAcademico() +
+                "nome=" + nome + ", sigla=" + sigla + '}';
     }
+
+    
     
 }

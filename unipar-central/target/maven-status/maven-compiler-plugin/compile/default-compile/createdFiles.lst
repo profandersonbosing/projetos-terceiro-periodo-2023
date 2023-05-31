@@ -1,1 +1,14 @@
+br/unipar/central/utils/DatabaseUtils.class
+br/unipar/central/models/AbstractBaseEntity.class
 br/unipar/central/UniparCentral.class
+br/unipar/central/models/Pais.class
+br/unipar/central/exceptions/TamanhoCampoInvalidoException.class
+br/unipar/central/exceptions/EntidadeNaoInformadaException.class
+br/unipar/central/models/Estado.class
+br/unipar/central/exceptions/CampoNaoInformadoException.class
+br/unipar/central/models/Pessoa.class
+br/unipar/central/services/PaisService.class
+br/unipar/central/enums/TipoPessoaEnum.class
+br/unipar/central/models/Endereco.class
+br/unipar/central/models/Cidade.class
+br/unipar/central/models/Telefone.class

@@ -1,1 +1,14 @@
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Pessoa.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Estado.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/AbstractBaseEntity.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/exceptions/CampoNaoInformadoException.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/exceptions/TamanhoCampoInvalidoException.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Cidade.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/utils/DatabaseUtils.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/services/PaisService.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/enums/TipoPessoaEnum.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/exceptions/EntidadeNaoInformadaException.java
 /Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/UniparCentral.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Pais.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Telefone.java
+/Users/andersonbosing/NetBeansProjects/unipar-central/src/main/java/br/unipar/central/models/Endereco.java

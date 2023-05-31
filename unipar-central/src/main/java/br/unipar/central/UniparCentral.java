@@ -1,40 +1,51 @@
 package br.unipar.central;
 
-import br.unipar.central.exceptions.CampoNaoInformadoException;
-import br.unipar.central.exceptions.EntidadeNaoInformadaException;
-import br.unipar.central.exceptions.TamanhoCampoInvalidoException;
+import br.unipar.central.enums.TipoPessoaEnum;
+import br.unipar.central.models.Estado;
 import br.unipar.central.models.Pais;
+import br.unipar.central.models.Pessoa;
+import br.unipar.central.repositories.PaisDAO;
 import br.unipar.central.services.PaisService;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
+
 
 public class UniparCentral {
 
     public static void main(String[] args) {
         
         try {
-        
-            PaisService paisService = new PaisService();
+            
+            PaisService service = new PaisService();
+            //List<Pais> resultado = service.findAll();
+            
+            //System.out.println(resultado.toString());
             
             Pais pais = new Pais();
-            //pais.setId(1);
-            pais.setNome("Brasil");
-            pais.setSigla("BR");
+            pais.setId(525257);
+            pais.setNome("PAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
+                    + "BOSINGGGGGG");
+            pais.setRegistroAcademico("17221");
+            pais.setSigla("B8");
             
-            paisService.validar(pais);
-        
-        } catch (EntidadeNaoInformadaException ex) {
-            JOptionPane.showMessageDialog(null, 
-                    ex.getMessage());
-        }  catch (CampoNaoInformadoException ex) {
-            JOptionPane.showMessageDialog(null, 
-                    ex.getMessage());
-        }  catch (TamanhoCampoInvalidoException ex) {
-            JOptionPane.showMessageDialog(null, 
-                    ex.getMessage());
+            //service.insert(pais);
+            //service.update(pais);
+            service.delete(525257);
+            
+            System.out.println("REGISTRO DELETADO");
+            
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null,
-                    "Exceção não Esperada. "+ex.getMessage());
+            JOptionPane.showMessageDialog(null, 
+                    ex.getMessage());
         }
-        
+       
     }
 }
