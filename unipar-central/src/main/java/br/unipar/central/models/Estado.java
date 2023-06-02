@@ -8,9 +8,8 @@ package br.unipar.central.models;
  *
  * @author andersonbosing
  */
-public class Estado {
+public class Estado extends AbstractBaseEntity {
    
-    private int id;
     private String nome;
     private String sigla;
     private Pais pais;
@@ -18,19 +17,10 @@ public class Estado {
     public Estado() {
     }
 
-    public Estado(int id, String nome, String sigla, Pais pais) {
-        this.id = id;
+    public Estado(String nome, String sigla, Pais pais) {
         this.nome = nome;
         this.sigla = sigla;
         this.pais = pais;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -57,9 +47,6 @@ public class Estado {
         this.pais = pais;
     }
 
-    @Override
-    public String toString() {
-        return "Estado{" + "id=" + id + ", nome=" + nome + ", sigla=" + sigla + ", pais=" + pais + '}';
-    }
+    
     
 }

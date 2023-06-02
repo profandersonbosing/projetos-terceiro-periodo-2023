@@ -4,6 +4,7 @@ import br.unipar.central.enums.TipoPessoaEnum;
 import br.unipar.central.models.Estado;
 import br.unipar.central.models.Pais;
 import br.unipar.central.models.Pessoa;
+import br.unipar.central.repositories.EstadoDAO;
 import br.unipar.central.repositories.PaisDAO;
 import br.unipar.central.services.PaisService;
 import java.util.ArrayList;
@@ -22,25 +23,21 @@ public class UniparCentral {
             
             //System.out.println(resultado.toString());
             
-            Pais pais = new Pais();
-            pais.setId(525257);
-            pais.setNome("PAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGGPAIS PROF BOSINGGGGGGPAIS PROF "
-                    + "BOSINGGGGGG");
-            pais.setRegistroAcademico("17221");
-            pais.setSigla("B8");
+           // Pais pais = new Pais();
+            //pais.setId(525257);
+            //pais.setNome("PAIS PROF BOSINGGGGGGPAIS");
+            //pais.setRegistroAcademico("17221");
+            //pais.setSigla("B8");
             
             //service.insert(pais);
             //service.update(pais);
-            service.delete(525257);
+            //service.delete(525257);
             
-            System.out.println("REGISTRO DELETADO");
+            EstadoDAO estadoDAO = new EstadoDAO();
+            List<Estado> listaEstados = estadoDAO.findAll();
+            
+            System.out.println(listaEstados.toString());
+            
             
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, 

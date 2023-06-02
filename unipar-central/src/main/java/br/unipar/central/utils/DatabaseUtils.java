@@ -17,8 +17,8 @@ public class DatabaseUtils {
     public Connection getConnection() throws SQLException  {
         return DriverManager.getConnection(
                 "jdbc:postgresql://3.142.131.90:5435/uniparcentral", 
-                "usuario", 
-                "senha"
+                "", 
+                ""
         );
     }
     
